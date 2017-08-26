@@ -1,2 +1,2 @@
 # saltdev-playground
-A set of vagrant images on which devlop custom salt artifacts
+A set of vagrant images on which develop custom salt artifacts
