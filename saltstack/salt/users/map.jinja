@@ -1,0 +1,9 @@
+{% set rpmsetup = salt['grains.filter_by']({
+    6: { 
+      'path': '/usr/bin/rpmdev-setuptree'
+    },
+    7: {
+      'path': '/bin/rpmdev-setuptree'
+    }
+  }, grain='osmajorrelease')
+%}

@@ -1,0 +1,23 @@
+---
+nodes: {
+  cent6-8:
+  { box: 'centos-6.8-64-lvm',
+    ip: "192.168.32.10",
+    ports: [
+      { host: 2022, guest: 22 }
+    ],
+    cmrole: 'master',
+    memory: 1024,
+    bootstrap: "bootstrap-el6.sh"
+  },
+  cent7-3:
+  { box: 'centos-7.3-64-lvm',
+    ip: "192.168.32.11",
+    ports: [
+      { host: 2023, guest: 22 }
+    ],
+    cmrole: 'master',
+    memory: 1024,
+    bootstrap: "bootstrap-el7.sh"
+  }
+}

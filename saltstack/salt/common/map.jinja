@@ -1,0 +1,9 @@
+{% set rpcbind = salt['grains.filter_by']({
+    6: {
+      'service': 'rpcbind'
+    },
+    7: {
+      'service': 'rpcbind.service'
+    }
+  }, grain='osmajorrelease')
+%}
